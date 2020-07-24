@@ -7,4 +7,6 @@ export const colors = {
     dot: 'silver',
     blue1: 'darkcyan',
     border: '#e9e9e9',
+    opacity: 'rgba(0,0,0,0.7)',
+    orange:'orange'
 }
