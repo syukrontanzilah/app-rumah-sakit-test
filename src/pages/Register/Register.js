@@ -1,8 +1,9 @@
 import React, { useState } from 'react'
-import { StyleSheet, Text, View, ScrollView } from 'react-native'
-import { Header, Input, Button, Gap, Loading } from '../../component'
-import { colors, useForm } from '../../utils'
+import { ScrollView, StyleSheet, View } from 'react-native'
+import { showMessage } from "react-native-flash-message"
+import { Button, Gap, Header, Input, Loading } from '../../component'
 import Fire from '../../config/Fire'
+import { colors, useForm } from '../../utils'
 
 const Register = ({ navigation }) => {
     // const [fullName, setFullName] = useState('');
@@ -21,13 +22,28 @@ const Register = ({ navigation }) => {
 
     const onContinue = () => {
         setLoading(true)
-        Fire.auth().createUserWithEmailAndPassword(form.email, form.password)
+        Fire.auth()
+            .createUserWithEmailAndPassword(form.email, form.password)
             .then((success) => {
                 setLoading(false)
+                setForm('reset')
+                const data = {
+                    fullName: form.fullName,
+                    profesi: form.profesi,
+                    email: form.email,
+                }
+                Fire.database()
+                    .ref('users/' + success.user.uid + '/')
+                    .set(data)
             })
             .catch((error) => {
                 const errorMessage = error.message
                 setLoading(false)
+                showMessage({
+                    message: errorMessage,
+                    type: 'default',
+                    backgroundColor: 'salmon'
+                })
             });
     }
 
@@ -92,7 +108,7 @@ const styles = StyleSheet.create({
         flex: 1
     },
     content: {
-        paddingHorizontal: 30,
+        paddingHorizontal: 40,
         marginTop: 30
     }
 })

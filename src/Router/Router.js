@@ -22,7 +22,7 @@ const MainApp = () => {
 const Router = () => {
     return (
         <Stack.Navigator
-            initialRouteName="GetStarted"
+            initialRouteName="Splash"
             screenOptions={{
                 headerShown: false
             }}
