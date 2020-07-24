@@ -1,13 +1,12 @@
 import React from 'react'
 import { StyleSheet, Text, View, ScrollView } from 'react-native'
-import { CarouselHome } from '../../component'
 
 const Home = () => {
     return (
         <View style={styles.page}>
             
-            <CarouselHome/>
-            {/* <Text>homeiii</Text> */}
+           
+            <Text>home</Text>
         </View>
     )
 }
