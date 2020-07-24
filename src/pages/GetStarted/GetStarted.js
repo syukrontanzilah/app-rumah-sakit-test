@@ -9,12 +9,10 @@ const GetStarted = ({ navigation }) => {
         <ImageBackground
             source={ILGetStarted}
             style={styles.page}>
-
             <View style={styles.wrapRS}>
                 <Text style={styles.rs}>Rumah Sakit</Text>
                 <Text style={styles.sukabumi}>Sukabumi</Text>
                 <Text style={styles.visi}>Melayani dengan sepenuh hati</Text>
-
             </View>
 
             <View style={styles.wrapButton}>

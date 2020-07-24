@@ -17,7 +17,9 @@ import IconOfficeStoreActive from './officestore-active.svg';
 import IconKeranjang from './keranjang.svg';
 import IconKeranjangActive from './keranjang-active.svg';
 import IconAkun from './profile.svg';
-import IconAkunActive from './profileactive.svg'
+import IconAkunActive from './profileactive.svg';
+
+import IconBack from './back.svg'
 
 
 export { IconCar, IconCoffee, IconGame, IconHoby, IconFlower, 
@@ -31,6 +33,7 @@ export { IconCar, IconCoffee, IconGame, IconHoby, IconFlower,
     IconKeranjang,
     IconKeranjangActive,
     IconAkun,
-    IconAkunActive
+    IconAkunActive,
+    IconBack
 };
 
