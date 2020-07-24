@@ -22,7 +22,7 @@ const GetStarted = ({ navigation }) => {
                     type="dark" />
                 <Gap height={10} />
                 <Button
-                    onPress={() => navigation.navigate('MainApp')}
+                    onPress={() => navigation.navigate('Login')}
                     title='Login' />
             </View>
 

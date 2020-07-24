@@ -36,7 +36,7 @@ const styles = StyleSheet.create({
         alignItems: 'center'
     },
     text: (active) => ({
-        color: active ? colors.active : colors.inactive,
+        color: active ? colors.blue1 : colors.inactive,
         fontSize: 12,
         marginTop: 4
     })
