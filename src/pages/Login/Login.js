@@ -17,7 +17,7 @@ const Login = ({navigation}) => {
 
                 <Text style={styles.opening}>Masuk dan mulai terima layanan dari kami</Text>
                 <Gap height={50} />
-                <Input label="Nama" />
+                <Input label="Email" />
                 <Gap height={20} />
                 <Input label="Password" />
                 <Gap height={40} />
