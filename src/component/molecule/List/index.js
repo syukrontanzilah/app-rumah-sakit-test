@@ -15,8 +15,6 @@ const List = ({name, category, str, profile}) => {
                 <Text style={styles.desc}>{category}</Text>
                 <Text style={styles.desc}>Str Number: {str} </Text>
             </View>
-
-
         </TouchableOpacity>
     )
 }
@@ -41,7 +39,9 @@ const styles = StyleSheet.create({
         alignItems: 'center'
     },
     image: {
-        height: 60, width: 60, backgroundColor: 'wheat',
+        height: 60, 
+        width: 60, 
+        backgroundColor: 'wheat',
         borderRadius: 10
     },
     name: {

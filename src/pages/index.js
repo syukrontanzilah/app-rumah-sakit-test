@@ -21,6 +21,9 @@ export {
     Register,
     GetStarted,
     ListDokter,
-    Pendaftaran, Resep, Layanan,
-    NoPasien, NotFound
+    Pendaftaran, 
+    Resep, 
+    Layanan,
+    NoPasien, 
+    NotFound
 }

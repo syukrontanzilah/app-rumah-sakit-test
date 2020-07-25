@@ -1,6 +1,6 @@
 import React from 'react'
-import { StyleSheet, Text, View, TouchableOpacity } from 'react-native'
-import { IconCoffee, IconBack } from '../../../asset'
+import { StyleSheet, Text, TouchableOpacity, View } from 'react-native'
+import { IconBack } from '../../../asset'
 import { colors } from '../../../utils'
 import { Gap } from '../../atom'
 
@@ -40,7 +40,5 @@ const styles = StyleSheet.create({
         fontSize: 22,
         color: colors.black1,
         fontWeight:'bold'
-
-
     }
 })

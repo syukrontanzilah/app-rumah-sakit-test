@@ -20,18 +20,15 @@ const KategoriDokter = ({ category, onPress }) => {
         if(category === "Dokter Jantung"){
             return<IconJantung/>
         }
-
         return <IconMatahari />
     }
     return (
         <TouchableOpacity
             onPress={onPress}
             style={styles.container}>
-
             <View style={{ height: 50, width: 50 }}>
                 <Icon/>
             </View>
-
             <Text style={styles.text}>{category}</Text>
         </TouchableOpacity>
     )

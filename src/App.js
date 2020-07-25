@@ -5,6 +5,7 @@ import FlashMessage from "react-native-flash-message";
 import Router from './Router/Router';
 
 const App = () => {
+  console.disableYellowBox = true;
   return (
     <>
     <NavigationContainer>

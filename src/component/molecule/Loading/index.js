@@ -22,7 +22,6 @@ const styles = StyleSheet.create({
         backgroundColor: colors.opacity,
         width:'100%',
         height:'100%'
-
     },
     text: {
         fontSize: 18,

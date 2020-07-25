@@ -6,13 +6,7 @@ import Fire from '../../config/Fire'
 import { colors, useForm } from '../../utils'
 
 const Register = ({ navigation }) => {
-    // const [fullName, setFullName] = useState('');
-    // const [profesi, setProfesi] = useState('');
-    // const [email, setEmail] = useState('');
-    // const [password, setPassword] = useState('')
-
     const [loading, setLoading] = useState(false)
-
     const [form, setForm] = useForm({
         fullName: '',
         profesi: '',

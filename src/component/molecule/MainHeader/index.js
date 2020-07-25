@@ -9,7 +9,6 @@ const MainHeader = ({ title, onPress }) => {
             <View style={styles.titleWrap}>
                 <Text style={styles.judul}>{title}</Text>
             </View>
-
             <TouchableOpacity
                 onPress={onPress}
                 style={styles.button}
@@ -20,7 +19,6 @@ const MainHeader = ({ title, onPress }) => {
         </View>
     )
 }
-
 export default MainHeader
 
 const styles = StyleSheet.create({
@@ -30,7 +28,6 @@ const styles = StyleSheet.create({
         flexDirection:'row',
         paddingHorizontal:20,
         alignItems:'center'
-
     },
     titleWrap: {
         flex: 1

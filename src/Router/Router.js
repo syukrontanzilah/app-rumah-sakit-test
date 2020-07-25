@@ -14,7 +14,6 @@ const MainApp = () => {
             <Tab.Screen name="Home" component={Home} />
             <Tab.Screen name="Info" component={Info} />
             <Tab.Screen name="Pesan" component={Pesan} />
-
         </Tab.Navigator>
     )
 }
@@ -38,8 +37,6 @@ const Router = () => {
             <Stack.Screen name="Layanan" component={Layanan} />
             <Stack.Screen name="NoPasien" component={NoPasien} />
             <Stack.Screen name="NotFound" component={NotFound} />
-
-
         </Stack.Navigator>
     )
 }

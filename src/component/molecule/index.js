@@ -8,6 +8,10 @@ import Menu from './Menu'
 
 export{
     Header,
-    Input, Loading, MainHeader,
-    KategoriDokter, List, Menu
+    Input, 
+    Loading, 
+    MainHeader,
+    KategoriDokter, 
+    List, 
+    Menu
 }

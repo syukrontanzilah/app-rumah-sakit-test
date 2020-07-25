@@ -14,7 +14,6 @@ const GetStarted = ({ navigation }) => {
                 <Text style={styles.sukabumi}>Sukabumi</Text>
                 <Text style={styles.visi}>Melayani dengan sepenuh hati</Text>
             </View>
-
             <View style={styles.wrapButton}>
                 <Button
                     onPress={() => navigation.navigate('Register')}
@@ -25,10 +24,6 @@ const GetStarted = ({ navigation }) => {
                     onPress={() => navigation.navigate('Login')}
                     title='Login' />
             </View>
-
-
-
-
         </ImageBackground>
     )
 }
@@ -37,7 +32,8 @@ export default GetStarted
 
 const styles = StyleSheet.create({
     page: {
-        flex: 1, justifyContent: 'space-around'
+        flex: 1, 
+        justifyContent: 'space-around'
     },
     wrapRS: {
         alignItems: 'flex-end',

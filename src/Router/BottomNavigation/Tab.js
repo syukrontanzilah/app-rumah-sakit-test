@@ -1,6 +1,6 @@
 import React from 'react'
 import { StyleSheet, Text, TouchableOpacity } from 'react-native'
-import { IconAkun, IconAkunActive, IconFeed, IconFeedActive, IconHome, IconHomeActive, IconKeranjang, IconKeranjangActive, IconOfficeStore, IconOfficeStoreActive } from '../../asset'
+import { IconAkun, IconAkunActive, IconFeed, IconFeedActive, IconHome, IconHomeActive } from '../../asset'
 import { colors } from '../../utils'
 
 const Tab = ({ title, active, onPress, onLongPress }) => {

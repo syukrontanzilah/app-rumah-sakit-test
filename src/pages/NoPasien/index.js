@@ -3,14 +3,14 @@ import { StyleSheet, Text, View } from 'react-native'
 import { Header } from '../../component'
 import { colors } from '../../utils'
 
-const NoPasien = () => {
+const NoPasien = ({navigation}) => {
     return (
         <View style={styles.page}>
-            <Header title="Nomor Antrian Anda" />
-
+            <Header 
+            onPress={()=> navigation.goBack()}
+            title="Nomor Antrian Anda" />
             <View style={styles.content}>
                 <Text style={styles.text}>Screen Shoot Nomor Antrian/ Nomor Pasien ini, atau perlihatkan halaman ini kepada petugas kami</Text>
-
                 <View style={styles.card}>
                 <Text style={styles.name}>Rumah Sakit Sukabumi</Text>
                     <Text>Nomor Pasien:</Text>
@@ -18,10 +18,8 @@ const NoPasien = () => {
                     <Text style={styles.name}>Andika Sugianto</Text>
                     <Text>Hari/Tanggal</Text>
                     <Text>Senin, 27/Agustus/2020</Text>
-
                 </View>
             </View>
-
         </View>
     )
 }

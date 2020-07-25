@@ -22,7 +22,9 @@ const styles = StyleSheet.create({
         opacity:0.3
     },
     image: {
-        height: 200, width: 200, marginBottom: 20
+        height: 200, 
+        width: 200, 
+        marginBottom: 20
     },
     text: {
         color: colors.black2,

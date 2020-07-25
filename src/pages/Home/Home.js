@@ -1,10 +1,9 @@
 import React, { useEffect, useState } from 'react'
-import { StyleSheet, Text, View, ScrollView, TouchableOpacity } from 'react-native'
-import { colors } from '../../utils'
-import { IconLogout } from '../../asset'
-import { Header, MainHeader, Opening, Gap, KategoriDokter, Menu } from '../../component'
-import Fire from '../../config/Fire'
+import { ScrollView, StyleSheet, Text, View } from 'react-native'
 import { showMessage } from 'react-native-flash-message'
+import { Gap, KategoriDokter, MainHeader, Menu, Opening } from '../../component'
+import Fire from '../../config/Fire'
+import { colors } from '../../utils'
 
 const Home = ({ navigation, }) => {
     const [categoryDokter, setCategoryDokter] = useState([])
@@ -51,10 +50,6 @@ const Home = ({ navigation, }) => {
                 onPress={signOut}
                 title="Rumah Sakit Sukabumi" />
 
-            {/* <Text>{fullName}</Text>
-            <Text>{profesi}</Text>
-            <Text>{email}</Text> */}
-
             <ScrollView
                 showsVerticalScrollIndicator={false}
                 style={styles.content}>
@@ -77,7 +72,7 @@ const Home = ({ navigation, }) => {
                                     category={item.category} />
                             })
                         }
-                        <Gap width={35} />
+                        <Gap width={25} />
                     </ScrollView>
                 </View>
 
@@ -97,11 +92,7 @@ const Home = ({ navigation, }) => {
                         title="Layanan" />
                 </View>
 
-
             </ScrollView>
-
-
-
         </View>
     )
 }
