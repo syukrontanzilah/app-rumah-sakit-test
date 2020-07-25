@@ -31,10 +31,12 @@ const Register = ({ navigation }) => {
                     fullName: form.fullName,
                     profesi: form.profesi,
                     email: form.email,
+                    uid:success.user.uid
                 }
                 Fire.database()
                     .ref('users/' + success.user.uid + '/')
                     .set(data)
+                    navigation.navigate('MainApp', data)
             })
             .catch((error) => {
                 const errorMessage = error.message

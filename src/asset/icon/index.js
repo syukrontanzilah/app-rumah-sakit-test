@@ -19,7 +19,8 @@ import IconKeranjangActive from './keranjang-active.svg';
 import IconAkun from './profile.svg';
 import IconAkunActive from './profileactive.svg';
 
-import IconBack from './back.svg'
+import IconBack from './back.svg';
+import IconLogout from './logout.svg'
 
 
 export { IconCar, IconCoffee, IconGame, IconHoby, IconFlower, 
@@ -34,6 +35,7 @@ export { IconCar, IconCoffee, IconGame, IconHoby, IconFlower,
     IconKeranjangActive,
     IconAkun,
     IconAkunActive,
-    IconBack
+    IconBack,
+    IconLogout
 };
 
