@@ -20,11 +20,16 @@ import IconAkun from './profile.svg';
 import IconAkunActive from './profileactive.svg';
 
 import IconBack from './back.svg';
-import IconLogout from './logout.svg'
+import IconLogout from './logout.svg';
+import IconGigi from './tambah.svg';
+import IconJantung from './heart.svg';
+import IconMata from './uploadfoto.svg';
+import IconUmum from './hospital-1.svg'
 
 
-export { IconCar, IconCoffee, IconGame, IconHoby, IconFlower, 
-    IconMatahari, IconWanita, IconBug, IconShirt, 
+export {
+    IconCar, IconCoffee, IconGame, IconHoby, IconFlower,
+    IconMatahari, IconWanita, IconBug, IconShirt,
     IconHome,
     IconHomeActive,
     IconFeed,
@@ -36,6 +41,7 @@ export { IconCar, IconCoffee, IconGame, IconHoby, IconFlower,
     IconAkun,
     IconAkunActive,
     IconBack,
-    IconLogout
+    IconLogout,
+    IconGigi, IconJantung, IconMata, IconUmum
 };
 

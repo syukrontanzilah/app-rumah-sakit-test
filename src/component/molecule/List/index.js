@@ -1,6 +1,5 @@
 import React from 'react'
-import { StyleSheet, Text, View, Image, TouchableOpacity } from 'react-native'
-import { DummyDokter1 } from '../../../asset'
+import { Image, StyleSheet, Text, TouchableOpacity, View } from 'react-native'
 import { colors } from '../../../utils'
 
 const List = ({name, category, str, profile}) => {

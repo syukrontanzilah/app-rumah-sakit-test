@@ -1,8 +1,8 @@
-import React, { useState, useEffect } from 'react'
-import { StyleSheet, Text, View } from 'react-native'
+import React, { useEffect, useState } from 'react'
+import { StyleSheet, View } from 'react-native'
 import { Header, List } from '../../component'
-import { colors } from '../../utils'
 import Fire from '../../config/Fire'
+import { colors } from '../../utils'
 
 const ListDokter = ({ navigation, route }) => {
     const [dataDokter, setDataDokter] = useState([]);
@@ -48,11 +48,7 @@ const ListDokter = ({ navigation, route }) => {
                         />
                     })
                 }
-
-
             </View>
-
-
         </View>
     )
 }

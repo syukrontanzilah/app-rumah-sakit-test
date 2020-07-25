@@ -1,21 +1,24 @@
 import React from 'react'
-import { StyleSheet, Text, View, TouchableOpacity } from 'react-native'
-import { IconMatahari, IconFlower, IconBug, IconWanita } from '../../../asset'
+import { StyleSheet, Text, TouchableOpacity, View } from 'react-native'
+import { IconFlower, IconGigi, IconJantung, IconMata, IconMatahari, IconUmum } from '../../../asset'
 import { colors } from '../../../utils'
 
 const KategoriDokter = ({ category, onPress }) => {
     const Icon = () => {
         if (category === "Dokter Umum") {
-            return <IconMatahari />
+            return <IconUmum />
         }
         if(category === "Dokter Anak"){
             return <IconFlower/>
         }
         if(category === "Dokter Gigi"){
-            return <IconBug/>
+            return <IconGigi/>
         }
         if(category === "Dokter Mata"){
-            return <IconWanita/>
+            return <IconMata/>
+        }
+        if(category === "Dokter Jantung"){
+            return<IconJantung/>
         }
 
         return <IconMatahari />
