@@ -6,8 +6,7 @@ import { Header, MainHeader, Opening, Gap, KategoriDokter, Menu } from '../../co
 import Fire from '../../config/Fire'
 import { showMessage } from 'react-native-flash-message'
 
-const Home = ({ route, navigation }) => {
-    // const {fullName, profesi, email, uid,} = route.params
+const Home = ({ navigation, }) => {
     const [categoryDokter, setCategoryDokter] = useState([])
     useEffect(() => {
         getCategoryDokter()
@@ -33,9 +32,24 @@ const Home = ({ route, navigation }) => {
             })
     }
 
+    const signOut = () => {
+        Fire.auth().signOut()
+            .then(res => {
+                navigation.replace('GetStarted')
+            }).catch(err => {
+                showMessage({
+                    message: "Terjadi kesalahan",
+                    type: 'default',
+                    backgroundColor: 'salmon'
+                })
+            })
+    }
+
     return (
         <View style={styles.page}>
-            <MainHeader title="Rumah Sakit Sukabumi" />
+            <MainHeader
+                onPress={signOut}
+                title="Rumah Sakit Sukabumi" />
 
             {/* <Text>{fullName}</Text>
             <Text>{profesi}</Text>
@@ -72,15 +86,15 @@ const Home = ({ route, navigation }) => {
                     <Text style={styles.title}>Features</Text>
                 </View>
                 <View style={styles.menu}>
-                    <Menu 
-                    onPress={()=>navigation.navigate('Pendaftaran')}
-                    title="Pendaftaran" />
-                    <Menu 
-                    onPress={()=>navigation.navigate('Resep')}
-                    title="Resep" />
-                    <Menu 
-                    onPress={()=>navigation.navigate('Layanan')}
-                    title="Layanan" />
+                    <Menu
+                        onPress={() => navigation.navigate('Pendaftaran')}
+                        title="Pendaftaran" />
+                    <Menu
+                        onPress={() => navigation.navigate('Resep')}
+                        title="Resep" />
+                    <Menu
+                        onPress={() => navigation.navigate('Layanan')}
+                        title="Layanan" />
                 </View>
 
 

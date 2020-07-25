@@ -12,10 +12,10 @@ const NoPasien = () => {
                 <Text style={styles.text}>Screen Shoot Nomor Antrian/ Nomor Pasien ini, atau perlihatkan halaman ini kepada petugas kami</Text>
 
                 <View style={styles.card}>
-                    <Text>nomor</Text>
-                    <Text>57</Text>
-                    <Text>Nama Pasien</Text>
-                    <Text>Andika Sugianto</Text>
+                <Text style={styles.name}>Rumah Sakit Sukabumi</Text>
+                    <Text>Nomor Pasien:</Text>
+                    <Text style={styles.angka}>57</Text>
+                    <Text style={styles.name}>Andika Sugianto</Text>
                     <Text>Hari/Tanggal</Text>
                     <Text>Senin, 27/Agustus/2020</Text>
 
@@ -42,12 +42,22 @@ const styles = StyleSheet.create({
         marginBottom:20
     },
     card: {
-        height: 200,
+        paddingVertical:30,
         width: '100%',
         borderRadius: 10,
         backgroundColor: colors.dot,
         alignItems: 'center',
         justifyContent: 'center',
         alignSelf: 'center',
+        borderWidth:1,
+        borderColor: colors.black2
+    },
+    angka:{
+        fontSize:60,
+        fontWeight:'bold',
+        color:colors.black1
+    },
+    name:{
+        fontSize:20
     }
 })

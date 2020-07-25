@@ -1,13 +1,14 @@
 import React from 'react'
 import { StyleSheet, Text, View } from 'react-native'
 import { Header } from '../../component'
+import NotFound from '../NotFound'
 
 const Resep = ({navigation}) => {
     return (
         <View style={styles.page}>
             <Header title="Resep"
             onPress={()=> navigation.goBack()}/>
-            <Text>Resep</Text>
+            <NotFound/>
         </View>
     )
 }

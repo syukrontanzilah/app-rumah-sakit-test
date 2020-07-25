@@ -25,9 +25,6 @@ const Pendaftaran = ({ navigation }) => {
                 <Input label="Kontak yang bisa dihubungi" />
                 <Gap height={20} />
 
-                <Input label="Pilih Specialist" />
-                <Gap height={20} />
-
                 <Input label="Pilih Hari" />
                 <Gap height={20} />
 

@@ -34,7 +34,7 @@ const ListDokter = ({ navigation, route }) => {
 
     return (
         <View style={styles.page}>
-            <Header title="List Dokter"
+            <Header title={itemCategory.category}
                 onPress={() => navigation.goBack()} />
             <View style={styles.content}>
                 {

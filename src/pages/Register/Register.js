@@ -36,7 +36,7 @@ const Register = ({ navigation }) => {
                 Fire.database()
                     .ref('users/' + success.user.uid + '/')
                     .set(data)
-                    navigation.navigate('MainApp', data)
+                    navigation.replace('MainApp')
             })
             .catch((error) => {
                 const errorMessage = error.message

@@ -1,7 +1,7 @@
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import { createStackNavigator } from '@react-navigation/stack';
 import React from 'react';
-import { Home, Info, Pesan, Splash, GetStarted, Register, Login, ListDokter, Pendaftaran, Resep, Layanan, NoPasien } from '../pages';
+import { Home, Info, Pesan, Splash, GetStarted, Register, Login, ListDokter, Pendaftaran, Resep, Layanan, NoPasien, NotFound } from '../pages';
 import { TabBar } from './BottomNavigation';
 
 
@@ -37,6 +37,8 @@ const Router = () => {
             <Stack.Screen name="Resep" component={Resep} />
             <Stack.Screen name="Layanan" component={Layanan} />
             <Stack.Screen name="NoPasien" component={NoPasien} />
+            <Stack.Screen name="NotFound" component={NotFound} />
+
 
         </Stack.Navigator>
     )

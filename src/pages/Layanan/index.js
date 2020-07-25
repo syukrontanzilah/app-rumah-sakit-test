@@ -1,12 +1,13 @@
 import React from 'react'
 import { StyleSheet, Text, View } from 'react-native'
 import { Header } from '../../component'
+import NotFound from '../NotFound'
 
-const Layanan = ({navigation}) => {
+const Layanan = ({ navigation }) => {
     return (
         <View style={styles.page}>
-            <Header title="Layanan" onPress = {()=> navigation.goBack()}/>
-            <Text>layanan</Text>
+            <Header title="Layanan" onPress={() => navigation.goBack()} />
+            <NotFound />
         </View>
     )
 }
@@ -14,7 +15,7 @@ const Layanan = ({navigation}) => {
 export default Layanan
 
 const styles = StyleSheet.create({
-    page:{
-        flex:1
+    page: {
+        flex: 1
     }
 })

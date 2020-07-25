@@ -2,11 +2,18 @@ import React, { useEffect } from 'react'
 import { StyleSheet, Text, View } from 'react-native'
 import { colors } from '../../utils'
 import { IconMatahari } from '../../asset'
+import Fire from '../../config/Fire'
 
 const Splash = ({ navigation }) => {
     useEffect(() => {
         setTimeout(() => {
-            navigation.replace('GetStarted')
+            Fire.auth().onAuthStateChanged((user) => {
+                if (user) {
+                    navigation.replace('MainApp')
+                } else {
+                    navigation.replace('GetStarted')
+                }
+            })
         }, 3000);
     }, [])
     return (
