@@ -4,7 +4,8 @@ import Loading from './Loading/index';
 import MainHeader from './MainHeader/index';
 import KategoriDokter from './KategoriDokter';
 import List from './List/index';
-import Menu from './Menu'
+import Menu from './Menu';
+import ListNews from './ListNews'
 
 export{
     Header,
@@ -13,5 +14,6 @@ export{
     MainHeader,
     KategoriDokter, 
     List, 
-    Menu
+    Menu,
+    ListNews
 }
