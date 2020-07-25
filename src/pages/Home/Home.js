@@ -47,7 +47,11 @@ const Home = ({ route, navigation }) => {
                 <Gap height={15} />
                 <Opening />
 
+                {/* <View>
+                    <Text>Dokter-Dokter Kami</Text>
+                </View> */}
                 <View style={styles.wrapKatagoriDokter}>
+
                     <ScrollView
                         style={styles.scrollHorizontal}
                         showsHorizontalScrollIndicator={false}
@@ -55,9 +59,10 @@ const Home = ({ route, navigation }) => {
 
                         {
                             categoryDokter.map(item => {
-                                return <KategoriDokter 
-                                key={item.id}
-                                category={item.category} />
+                                return <KategoriDokter
+                                    onPress={() => navigation.navigate('ListDokter', item)}
+                                    key={item.id}
+                                    category={item.category} />
                             })
                         }
 

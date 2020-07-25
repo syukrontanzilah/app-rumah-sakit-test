@@ -4,7 +4,8 @@ import Info from './Info/Info'
 import Pesan from './Pesan/Pesan';
 import GetStarted from './GetStarted/GetStarted';
 import Login from './Login/Login';
-import Register from './Register/Register'
+import Register from './Register/Register';
+import ListDokter from './ListDokter'
 
 export {
     Home,
@@ -13,5 +14,6 @@ export {
     Pesan,
     Login,
     Register,
-    GetStarted
+    GetStarted,
+    ListDokter
 }
