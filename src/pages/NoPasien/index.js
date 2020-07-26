@@ -18,10 +18,8 @@ const NoPasien = ({ navigation, route }) => {
                     <Text style={styles.name}>Rumah Sakit Sukabumi</Text>
                     <Text>Nomor Pasien:</Text>
                     <Text style={styles.angka}>{randomNumber}</Text>
-                    <Text>Nama: {pasien}</Text>
+                    <Text style={styles.name}>Nama: {pasien}</Text>
                     <Text>Tanggal periksa:  {date}</Text>
-
-
                 </View>
             </View>
         </View>

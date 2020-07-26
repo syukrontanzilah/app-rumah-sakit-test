@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import { StyleSheet, Text, View, ScrollView } from 'react-native'
-import { Header, Gap, Input, Button, Loading } from '../../component'
+import { Header, Gap, Input, Button, Loading, DatePicker } from '../../component'
 import { colors, useForm } from '../../utils'
 import Fire from '../../config/Fire'
 import { showMessage } from 'react-native-flash-message'
@@ -11,7 +11,7 @@ const Pendaftaran = ({ navigation }) => {
         gender: "",
         date: "",
         problem: ""
-    })
+    }) 
 
     const [loading, setLoading] = useState(false)
 
