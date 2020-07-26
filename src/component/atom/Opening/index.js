@@ -7,7 +7,6 @@ const Opening = () => {
         <View style={styles.wrap}>
             <Text style={styles.text1}>Selamat datang di Aplikasi <Text style={{color: colors.blue1}}>Rumah Sakit Sukabumi</Text>. Kami berkomitment memberikan pelayanan yang terbaik..</Text>
             <Text style={styles.text1}></Text>
-
         </View>
     )
 }

@@ -3,21 +3,25 @@ import { StyleSheet, Text, View } from 'react-native'
 import { Header } from '../../component'
 import { colors } from '../../utils'
 
-const NoPasien = ({navigation}) => {
+let randomNumber = Math.floor(Math.random()*100)+1
+
+const NoPasien = ({ navigation, route }) => {
+    const { pasien, date } = route.params
     return (
         <View style={styles.page}>
-            <Header 
-            onPress={()=> navigation.goBack()}
-            title="Nomor Antrian Anda" />
+            <Header
+                onPress={() => navigation.goBack()}
+                title="Nomor Antrian Anda" />
             <View style={styles.content}>
-                <Text style={styles.text}>Screen Shoot Nomor Antrian/ Nomor Pasien ini, atau perlihatkan halaman ini kepada petugas kami</Text>
+                <Text style={styles.text}>Screen Shoot Nomor Antrian/ Nomor Pasien ini, dan perlihatkan kepada petugas Rumah Sakit kami</Text>
                 <View style={styles.card}>
-                <Text style={styles.name}>Rumah Sakit Sukabumi</Text>
+                    <Text style={styles.name}>Rumah Sakit Sukabumi</Text>
                     <Text>Nomor Pasien:</Text>
-                    <Text style={styles.angka}>57</Text>
-                    <Text style={styles.name}>Andika Sugianto</Text>
-                    <Text>Hari/Tanggal</Text>
-                    <Text>Senin, 27/Agustus/2020</Text>
+                    <Text style={styles.angka}>{randomNumber}</Text>
+                    <Text>Nama: {pasien}</Text>
+                    <Text>Tanggal periksa:  {date}</Text>
+
+
                 </View>
             </View>
         </View>
@@ -32,30 +36,30 @@ const styles = StyleSheet.create({
     },
     content: {
         paddingHorizontal: 20,
-        marginTop:20
+        marginTop: 20
     },
     text: {
         fontSize: 16,
         color: colors.black2,
-        marginBottom:20
+        marginBottom: 20
     },
     card: {
-        paddingVertical:30,
+        paddingVertical: 30,
         width: '100%',
         borderRadius: 10,
         backgroundColor: colors.dot,
         alignItems: 'center',
         justifyContent: 'center',
         alignSelf: 'center',
-        borderWidth:1,
+        borderWidth: 1,
         borderColor: colors.black2
     },
-    angka:{
-        fontSize:60,
-        fontWeight:'bold',
-        color:colors.black1
+    angka: {
+        fontSize: 60,
+        fontWeight: 'bold',
+        color: colors.black1
     },
-    name:{
-        fontSize:20
+    name: {
+        fontSize: 20
     }
 })

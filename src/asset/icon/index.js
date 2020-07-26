@@ -28,8 +28,15 @@ import IconUmum from './hospital-1.svg'
 
 
 export {
-    IconCar, IconCoffee, IconGame, IconHoby, IconFlower,
-    IconMatahari, IconWanita, IconBug, IconShirt,
+    IconCar, 
+    IconCoffee, 
+    IconGame, 
+    IconHoby, 
+    IconFlower,
+    IconMatahari, 
+    IconWanita, 
+    IconBug, 
+    IconShirt,
     IconHome,
     IconHomeActive,
     IconFeed,
@@ -42,6 +49,9 @@ export {
     IconAkunActive,
     IconBack,
     IconLogout,
-    IconGigi, IconJantung, IconMata, IconUmum
+    IconGigi, 
+    IconJantung, 
+    IconMata, 
+    IconUmum
 };
 

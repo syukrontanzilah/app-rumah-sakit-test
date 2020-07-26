@@ -16,7 +16,17 @@ const Pendaftaran = ({ navigation }) => {
     const [loading, setLoading] = useState(false)
 
     const onSubmit = () => {
-     
+        setLoading(false)
+        setForm('reset')
+        const data = {
+            pasien: form.pasien,
+            gender: form.gender,
+            date: form.date,
+            problem: form.problem
+        }
+        Fire.database().ref('pendaftaran/')
+            .set(data)
+        navigation.navigate('NoPasien', data)
     }
 
     return (
@@ -44,8 +54,6 @@ const Pendaftaran = ({ navigation }) => {
                     />
                     <Gap height={20} />
 
-             
-
                     <Input label="Pilih Tanggal"
                         placeholder="DD/MM/YYYY"
                         value={form.date}
@@ -60,7 +68,7 @@ const Pendaftaran = ({ navigation }) => {
                     <Gap height={40} />
 
                     <Button
-                        onPress={()=> navigation.navigate('NoPasien')}
+                        onPress={onSubmit}
                         title="Submit" />
 
                     <Gap height={40} />
